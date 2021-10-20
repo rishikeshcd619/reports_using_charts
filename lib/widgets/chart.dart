@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 
-import './chartbar.dart';
+import './chart_bar.dart';
 import '../models/transaction.dart';
 
 class Chart extends StatelessWidget {
@@ -33,7 +33,7 @@ class Chart extends StatelessWidget {
 
   double get totalSpending {
     return groupedTransactionValues.fold(0.0, (sum, item) {
-      return sum + (item['amount'] as double);
+      return sum + item['amount'];
     });
   }
 
@@ -50,8 +50,8 @@ class Chart extends StatelessWidget {
             return Flexible(
               fit: FlexFit.tight,
               child: ChartBar(
-                (data['day'] as String),
-                (data['amount'] as double),
+                data['day'],
+                data['amount'],
                 totalSpending == 0.0
                     ? 0.0
                     : (data['amount'] as double) / totalSpending,
