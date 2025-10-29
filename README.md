@@ -1,16 +1,27 @@
-# newapp
+## Reports & Analytics App – Flutter
 
-A new Flutter project.
+The Reports & Analytics App is a Flutter-based mobile application designed to visualize data insights through interactive charts and reports. It enables users to track, analyze, and interpret key metrics using dynamic and visually appealing chart components. Built with a modular architecture, it supports integration with REST APIs or Firebase for real-time analytics.
 
-## Getting Started
+### Key Features
 
-This project is a starting point for a Flutter application.
+📈 Interactive Charts: Visualize data using bar, pie, line, and area charts.
 
-A few resources to get you started if this is your first Flutter project:
+🧩 Multiple Chart Types: Supports multi-series, stacked, and comparative visualizations.
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+☁️ Real-Time Data: Fetch and display live data from API or Firebase.
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+📱 Responsive UI: Adaptive layout for both Android and iOS screens.
+
+🧠 State Management: BLoC / Provider for reactive and maintainable state flow.
+
+🎨 Elegant Design: Built with Material Design and smooth chart animations.
+
+### Tech Stack
+
+Framework: Flutter (Dart)
+
+State Management: Flutter BLoC / Provider
+
+Chart Libraries:
+
+fl_chart
